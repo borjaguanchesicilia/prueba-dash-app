@@ -9,28 +9,7 @@ df = pd.read_csv('datos.csv')
 app = dash.Dash(__name__)
 server = app.server
 
-# Definir el layout de la aplicación
 app.layout = html.Div([
-    html.Style("""
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333333;
-        }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
-        .title {
-            text-align: center;
-            color: #003366;
-        }
-        .filter-label {
-            margin: 10px 0;
-        }
-    """),
-    
     html.Div([
         html.H1("Dashboard de Vinos de Tenerife", className="title"),
         
@@ -102,6 +81,7 @@ def actualizar_graficos(denominacion, periodo):
     )
     
     return fig_tinto_blanco, fig_total
+
 
 # Ejecutar la aplicación
 if __name__ == '__main__':

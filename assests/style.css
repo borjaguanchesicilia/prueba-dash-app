@@ -1,0 +1,20 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #003366;
+}
+
+.filter-label {
+    margin: 10px 0;
+}
